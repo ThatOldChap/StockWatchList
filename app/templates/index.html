@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Watchlist - {{ user.username }}</h1>
+    {% for stock in stocks %}
+    <div><p><b>{{ stock.ticker }}</b> - Cost: ${{ stock.price }} {{ stock.currency}}</p></div>
+    {% endfor %}
+{% endblock %}
