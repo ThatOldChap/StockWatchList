@@ -1,1 +1,2 @@
 FLASK_APP=stockwatchlist.py
+FLASK_DEBUG=0
